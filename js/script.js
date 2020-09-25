@@ -1,2 +1,2 @@
 alert("Display message");
-alert("Display message 2");
+prompt("Please enter your name", "Your name ..");
