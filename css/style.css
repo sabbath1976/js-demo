@@ -6,5 +6,19 @@
     cursor: pointer;
     font-family: sans-serif;
     color: #777;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.btn:focus {
+    outline: none;
 }
