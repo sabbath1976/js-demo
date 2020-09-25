@@ -1,4 +1,4 @@
-function callIt() {
-    alert("Display message");
-    prompt("Please enter your name", "Your name ..");
+function callIt(message) {
+    alert("U clicked on: " + message);
+    prompt("Please enter your name", "You clicked on: " + message);
 }
