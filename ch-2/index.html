@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" onkeypress="sniffer('You pressed a key')">
+<html lang="en" id="main-html">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,17 +7,17 @@
         <title>Chapter 2</title>
     </head>
 
-    <body onresize="sniffer('window resized')" onload="alert('page loading')">
+    <body id="main-body">
         <h1>I am the header</h1>
-        <input type="text" onchange="alert('It changed!')" />
+        <input type="text" id="input-change" />
         <button class="btn" id="btn">Try it</button>
-        <p onclick="sniffer('p tag clicked')">
+        <p id="first-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Accusantium quasi nisi totam, voluptatem nihil natus, tempore
             quisquam ad at assumenda officiis quidem blanditiis, iusto tenetur
             ratione. A sapiente accusamus harum.
         </p>
-        <p class="paragraph-2" onmouseover="sniffer('2nd p tag moused-over')">
+        <p class="paragraph-2" id="second-paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas amet
             recusandae laboriosam quae quos officiis modi veniam nesciunt
             explicabo repudiandae esse harum beatae reiciendis itaque, illum
