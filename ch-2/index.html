@@ -8,10 +8,11 @@
     <title>Chapter 2</title>
 </head>
 
-<body onresize="sniffer('window resized')">
+<body onresize="sniffer('window resized')" onload="alert('page loading')">
     <h1>I am the header</h1>
+    <input type="text" onchange="alert('It changed!')">
     <button class="btn" onclick="sniffer('Try it button clicked')">Try it</button>
-    <p>
+    <p onclick="sniffer('p tag clicked')">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quasi nisi totam, voluptatem nihil natus,
         tempore quisquam ad at assumenda officiis quidem blanditiis, iusto tenetur ratione. A sapiente accusamus harum.
     </p>
