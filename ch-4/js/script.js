@@ -1,5 +1,12 @@
-var firstName = "Stefan";
+var firstName = "Jimmy";
+var lastName = "Fish";
 
-firstName = "Mary";
+var fullName;
+fullName = firstName + " " + lastName;
 
-alert(firstName);
+var aNumber = 6;
+var anotherNumber = "4";
+
+var theAddition = aNumber + lastName;
+
+alert(theAddition);
