@@ -1,4 +1,5 @@
-var firstName;
-firstName = "Stefan";
+var firstName = "Stefan";
+
+firstName = "Mary";
 
 alert(firstName);
