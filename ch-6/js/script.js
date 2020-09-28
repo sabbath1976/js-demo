@@ -12,6 +12,11 @@ function runIt() {
     var target = document.getElementById("first");
     var currentValue = target.innerHTML;
     console.log(currentValue);
+
+    if (1 < 4) {
+        // document.getElementById("first").innerHTML = "It is!";
+        target.innerHTML = "It isssssssssss!";
+    }
 }
 
 document.getElementById("btn").onclick = function () {
