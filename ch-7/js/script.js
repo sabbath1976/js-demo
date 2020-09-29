@@ -1,16 +1,17 @@
 function doItAgain() {
-    var counter = 0;
+    // var counter = 0;
 
-    while (counter < 10) {
+    // while (counter < 10) {
+    for (var i = 0; i < 10; i++) {
         var target = document.getElementById("target");
-        target.innerHTML += counter + "<br>";
+        target.innerHTML += i + "<br>";
 
-        console.log("Counter is now: " + counter);
+        console.log("Counter is now: " + i);
 
-        counter++;
+        // counter++;
     }
 
-    console.log("End of while loop");
+    console.log("End of for loop");
 
     var button = document.getElementById("looper");
     button.innerText = "Done looping!";
