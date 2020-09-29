@@ -1,20 +1,4 @@
 function doItAgain() {
-    var loopCount = 5;
-
-    while (loopCount > 0) {
-        console.log("LoopCount is now: " + loopCount);
-        // loopCount = loopCount - 1;
-        // loopCount -= 1;
-        loopCount--;
-    }
-
-    console.log("End loop");
-}
-
-document.getElementById("looper").onclick = function () {
-    doItAgain();
-};
-function doItAgain() {
     var counter = 0;
 
     while (counter < 10) {
@@ -27,6 +11,10 @@ function doItAgain() {
     }
 
     console.log("End of while loop");
+
+    var button = document.getElementById("looper");
+    button.innerText = "Done looping!";
+    button.style.fontSize = "34px";
 }
 
 document.getElementById("looper").onclick = function () {
