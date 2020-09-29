@@ -1,21 +1,23 @@
 function doItAgain() {
-    // var counter = 0;
+    var counter = 0;
 
-    // while (counter < 10) {
-    for (var i = 0; i < 10; i++) {
-        var target = document.getElementById("target");
-        target.innerHTML += i + "<br>";
+    // while (counter < 5) {
+    //     if (counter == 3) {
+    //         alert("Three!");
+    //         counter++;
+    //     } else {
+    //         console.log("Counter is now: " + counter);
+    //         counter++;
+    //     }
+    // }
 
-        console.log("Counter is now: " + i);
-
-        // counter++;
+    for (var i = 0; i < 5; i++) {
+        if (i == 3) {
+            alert("Three!");
+        } else {
+            console.log("i is now: " + i);
+        }
     }
-
-    console.log("End of for loop");
-
-    var button = document.getElementById("looper");
-    button.innerText = "Done looping!";
-    button.style.fontSize = "34px";
 }
 
 document.getElementById("looper").onclick = function () {
