@@ -1,26 +1,18 @@
-function doItAgain() {
-    var counter = 0;
+function nameValidation() {
+    do {
+        var email = prompt("Enter your email:");
+        var result = email.indexOf("@");
 
-    // while (counter < 5) {
-    //     if (counter == 3) {
-    //         alert("Three!");
-    //         counter++;
-    //     } else {
-    //         console.log("Counter is now: " + counter);
-    //         counter++;
-    //     }
-    // }
-
-    for (var i = 0; i < 5; i++) {
-        if (i == 3) {
-            alert("Three!");
+        if (result != -1) {
+            console.log("Your email is correct");
         } else {
-            console.log("i is now: " + i);
+            alert("Your email is incorrent. Please try again");
+            console.log("Your email is incorrect");
         }
-    }
+    } while (result == -1);
 }
 
 document.getElementById("looper").onclick = function () {
-    doItAgain();
+    nameValidation();
     this.style.color = "purple";
 };
