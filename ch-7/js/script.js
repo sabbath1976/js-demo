@@ -14,3 +14,22 @@ function doItAgain() {
 document.getElementById("looper").onclick = function () {
     doItAgain();
 };
+function doItAgain() {
+    var counter = 0;
+
+    while (counter < 10) {
+        var target = document.getElementById("target");
+        target.innerHTML += counter + "<br>";
+
+        console.log("Counter is now: " + counter);
+
+        counter++;
+    }
+
+    console.log("End of while loop");
+}
+
+document.getElementById("looper").onclick = function () {
+    doItAgain();
+    this.style.color = "purple";
+};
