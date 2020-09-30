@@ -4,5 +4,16 @@ document.getElementById("btn").onclick = function () {
     var pets = ["Pets", "Pets2", dogs, false];
     result.innerHTML = pets;
 
-    alert(dogs.length);
+    dogs.push("Pushing Dog");
+
+    // alert(dogs.length);
+    // alert(dogs.sort());
+    // console.log(dogs.sort());
+    // var sortedDogs = dogs.sort();
+    // result.innerHTML = sortedDogs;
+    // console.log(sortedDogs);
+
+    for (var index = 0; index < dogs.length; index++) {
+        console.log(dogs[index]);
+    }
 };
