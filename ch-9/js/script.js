@@ -12,13 +12,26 @@
 //     console.log(singleReturn("Thomas", "Kontogiannis"));
 // };
 
-var globalVar = "global";
+// var globalVar = "global";
 
-function variableScope() {
-    var localVar = 665;
-    return localVar;
+// function variableScope() {
+//     var localVar = 665;
+//     return localVar;
+// }
+
+// // alert(globalVar);
+// // alert(localVar);
+// alert(variableScope());
+
+function multiReturn(first, last, age) {
+    var fullName = first + " " + last;
+    var displayAge = "Age: " + age;
+    var namePackage = [fullName, displayAge];
+
+    return namePackage;
 }
 
-// alert(globalVar);
-// alert(localVar);
-alert(variableScope());
+document.getElementById("btn").onclick = function () {
+    var myNameArray = multiReturn("Thomas", "Kontogiannis", 17);
+    console.log(myNameArray[1]);
+}
