@@ -23,15 +23,29 @@
 // // alert(localVar);
 // alert(variableScope());
 
-function multiReturn(first, last, age) {
-    var fullName = first + " " + last;
-    var displayAge = "Age: " + age;
-    var namePackage = [fullName, displayAge];
+// function multiReturn(first, last, age) {
+//     var fullName = first + " " + last;
+//     var displayAge = "Age: " + age;
+//     var namePackage = [fullName, displayAge];
 
-    return namePackage;
+//     return namePackage;
+// }
+
+function checkAge(age) {
+    var oldEnough;
+
+    if (age > 17) {
+        oldEnough = true;
+    } else {
+        oldEnough = false;
+    }
+
+    return oldEnough;
 }
 
 document.getElementById("btn").onclick = function () {
-    var myNameArray = multiReturn("Thomas", "Kontogiannis", 17);
-    console.log(myNameArray[1]);
+    // var myNameArray = multiReturn("Thomas", "Kontogiannis", 17);
+    // console.log(myNameArray[1]);
+
+    console.log(checkAge(12));
 }
