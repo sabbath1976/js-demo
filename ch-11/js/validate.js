@@ -1,18 +1,26 @@
-function validateForm() {
-    var nameFirst = document.getElementById("nameFirst");
-    var theValue = nameFirst.value;
+// function validateForm() {
+//     var nameFirst = document.getElementById("nameFirst");
+//     var theValue = nameFirst.value;
 
-    if (theValue != "Stefan") {
-        console.log("Will this fire?");
+//     if (theValue != "Stefan") {
+//         console.log("Will this fire?");
 
-        var messageHolder = document.getElementById("target");
-        messageHolder.style.color = "red";
-        messageHolder.innerHTML = "<h2>Put in my name!</h2>";
-        nameFirst.select();
+//         var messageHolder = document.getElementById("target");
+//         messageHolder.style.color = "red";
+//         messageHolder.innerHTML = "<h2>Put in my name!</h2>";
+//         nameFirst.select();
 
-        return false;
-    }
-}
+//         return false;
+//     }
+// }
+
+// document.getElementById("submit").onclick = function () {
+//     var doSubmit = validateForm();
+
+//     if (doSubmit == false) {
+//         return false;
+//     }
+// };
 
 document.getElementById("submit").onclick = function () {
     var doSubmit = validateForm();
