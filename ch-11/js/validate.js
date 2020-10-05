@@ -45,5 +45,7 @@ function validateForm() {
         // nameFirst.focus();
 
         return false;
+
+        // console.log("Will this fire 2?");
     }
 }
