@@ -56,3 +56,22 @@ function getRandomColor() {
 
     return color;
 }
+
+function discoSquare() {
+    var canvas = document.getElementById("whiteBoard");
+    var context = canvas.getContext("2d");
+
+    var theColor = getRandomColor();
+    var verPos = Math.floor(Math.random * 399 + 1);
+
+    context.lineWidth = 10;
+    context.strokeStyle = theColor;
+    context.moveTo(10, verPos);
+    console.log("vertical pos: " + verPos);
+
+    context.lineTo(400, verPos);
+    context.lineCap = "butt";
+    context.stroke();
+
+    document.getElementById("displayColor").innerHTML = theColor;
+}
