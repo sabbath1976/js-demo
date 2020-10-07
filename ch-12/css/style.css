@@ -3,12 +3,9 @@ main {
     margin: 0 auto;
 }
 
-#editableElement {
-    background-color: #dfe4df;
-    width: 400px;
-    height: 200px;
+canvas {
+    border: 1px dashed black;
     padding: 10px;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: block;
 }
