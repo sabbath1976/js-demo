@@ -47,7 +47,7 @@
 var notRunning = true;
 
 function getRandomColor() {
-    var letters = "0123456789ABCDEF".split(" ");
+    var letters = "0123456789ABCDEF".split("");
     var color = "#";
 
     for (var i = 0; i < 6; i++) {
@@ -62,7 +62,7 @@ function discoSquare() {
     var context = canvas.getContext("2d");
 
     var theColor = getRandomColor();
-    var verPos = Math.floor(Math.random * 399 + 1);
+    var verPos = Math.floor(Math.random() * 399 + 1);
 
     context.lineWidth = 10;
     context.strokeStyle = theColor;
@@ -75,3 +75,19 @@ function discoSquare() {
 
     document.getElementById("displayColor").innerHTML = theColor;
 }
+
+var animation;
+
+document.getElementById("discoStart").onclick = function () {
+    if (notRunning) {
+        animation = setInterval(discoSquare, 100);
+        notRunning = false;
+    } else {
+        alert("Sorry, already running.");
+    }
+};
+
+document.getElementById("discoStop").onclick = function () {
+    clearInterval(animation);
+    notRunning = true;
+};
